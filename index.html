@@ -54,18 +54,41 @@
             margin-left: 0.5rem;
             float: right;
         }
+
+        data:hover::after {
+            content: ' (' attr(value) ')';
+            font-size: 0.7em;
+        }
+
+        .warning {
+            border: 10px ridge rgba(255, 0, 0, 0.563);
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .warning img {
+            width: 100%;
+        }
+
+        .warning p {
+            font: small-caps bold 1.2rem sans-serif;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
-    <a href="#a">A</a> | <a href="#b">B</a>| <a href="#c">C</a>
-
+    <a href="#a">A</a> | <a href="#b">B</a>| <a href="#c">C</a>| <a href="#d">D</a>| <a href="#e">E</a>| <a
+        href="#f">F</a>| <a href="#g">G</a>| <a href="#h">H</a>| <a href="#i">I</a>| <a href="#j">J</a>| <a
+        href="#k">K</a>| <a href="#l">L</a>| <a href="#m">M</a>| <a href="#n">N</a>| <a href="#o">O</a>| <a
+        href="#p">P</a>| <a href="#q">Q</a>| <a href="#r">R</a>| <a href="#s">S</a>| <a href="#t">T</a>| <a
+        href="#u">U</a>| <a href="#v">V</a>| <a href="#w">W</a>| <a href="#x">X</a>| <a href="#y">Y</a>| <a
+        href="#z">Z</a>
 
     <!--  &lt;     &gt;  -->
     <h3> HTML TAGS</h3>
-    <p>Per creare questo documento si è chiesto il supporto di chatbot, delle risorse da Mozilla Developer Network e
-        da w3schools e probabilmente altro</p>
     <h4>Lista dei tag </h4>
     <hr>
     <!-- ----------------------------------------------------- a -------------------------------------------------------- -->
@@ -169,7 +192,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- article -------------------------------------------------------- -->
     <ul>
         <li>
@@ -204,7 +226,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- aside -------------------------------------------------------- -->
     <ul>
         <li>
@@ -260,7 +281,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- b -------------------------------------------------------- -->
     <ul id="b">
         <li>
@@ -306,7 +326,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- bdi -------------------------------------------------------- -->
     <ul>
         <li>
@@ -349,7 +368,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- blockquote -------------------------------------------------------- -->
     <ul>
         <li>
@@ -404,7 +422,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- br -------------------------------------------------------- -->
     <ul>
         <li>
@@ -447,7 +464,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- canvas -------------------------------------------------------- -->
     <ul id="c">
         <li>
@@ -471,9 +487,6 @@
         </li>
     </ul>
     <hr>
-
-
-
     <!-- ----------------------------------------------------- caption -------------------------------------------------------- -->
     <ul>
         <li>
@@ -538,7 +551,6 @@
         </li>
     </ul>
     <hr>
-
     <!-- ----------------------------------------------------- code -------------------------------------------------------- -->
     <ul>
         <li>
@@ -561,9 +573,6 @@
         </li>
     </ul>
     <hr>
-
-
-
     <!-- ----------------------------------------------------- col -------------------------------------------------------- -->
     <ul>
         <li>
@@ -623,10 +632,6 @@
         </li>
     </ul>
     <hr>
-
-
-
-
     <!-- ----------------------------------------------------- colgroup -------------------------------------------------------- -->
     <ul>
         <li>
@@ -662,12 +667,524 @@
     </ul>
     <hr>
 
+    <!-- ----------------------------------------------------- data -------------------------------------------------------- -->
+    <ul id="d">
+        <li>
+            <div>Tag: &lt;data&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per incorporare <b> dati aggiuntivi o valori specifici </b> all'interno di
+                un documento HTML. Questi dati possono essere associati a un elemento specifico nel documento e possono
+                essere utilizzati per scopi vari, come ad esempio per scopi di scripting o per l'accessibilità.
+                L'attributo "value" viene utilizzato per specificare il valore associato ai dati, mentre il testo
+                contenuto
+                all'interno del tag rappresenta il valore visibile nel documento per scopi di presentazione.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <ul>
+                    <li><data value="30°">Celsius</data></li>
+                    <li><data value="86°">Fahrenheit</data></li>
+                    <li><data value="303.15°">Kelvin</data></li>
+                </ul>
+
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- datalist -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;datalist&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per <b> definire una lista di opzioni predefinite </b> che possono essere
+                associate
+                a un campo di input testuale (input type="text"). Fornisce suggerimenti o completamenti automatici per
+                l'utente quando inserisce dati nel campo di input.
+                All'interno del tag datalist, definiamo una serie di opzioni disponibili.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <label for="linguaggio">Scegli un linguaggio di programmazione:</label>
+                <input type="text" id="linguaggio" list="linguaggio-list">
+
+                <datalist id="linguaggio-list">
+                    <option value="JavaScript">
+                    <option value="Python">
+                    <option value="Java">
+                    <option value="C++">
+                    <option value="Ruby">
+                </datalist>
+            </div>
+        </li>
+    </ul>
+    <hr>
+
+    <!-- ----------------------------------------------------- dd -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;dd&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : fornisce la descrizione, la definizione o il valore del termine precedente in un elenco
+                di descrizioni. Viene utilizzato insieme ad altri tag.<br>
+                <ul>
+                    <li> &lt;dl &gt; definizione di lista</li>
+                    <li> &lt;dt &gt; definizione di termine </li>
+                    <li><b>&lt;dd&gt; definizione di descrizione</b> </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <dl>lista :
+                    <dt> termine: HTML</dt>
+                    <dd> descrizione: HyperText Markup Language - il linguaggio di markup standard per la creazione di
+                        pagine web.
+                    </dd>
+
+                    <dt> termine: CSS</dt>
+                    <dd> descrizione: Cascading Style Sheets - un linguaggio di stile utilizzato per definire l'aspetto
+                        e la
+                        formattazione di un documento HTML.</dd>
+
+                    <dt> termine: JavaScript</dt>
+                    <dd>descrizione: Un linguaggio di programmazione per la creazione di interattività e funzionalità
+                        dinamiche sulle
+                        pagine web.</dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- del -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt; del &gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per rappresentare il testo eliminato o cancellato all'interno di un
+                documento HTML. Viene spesso utilizzato in contesti come la modifica di documenti o la visualizzazione
+                delle revisioni.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <p>Hai <del>sbagliato</del> corretto la parola.</p>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- details -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt; details &gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per creare un elemento interattivo che mostra o nasconde un contenuto
+                dettagliato, come una descrizione aggiuntiva o un'area di testo espandibile.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <details>
+                    <summary>Ulteriori informazioni</summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti ducimus hic nisi quod?
+                        Nesciunt mollitia quas suscipit ex ratione tempore libero sunt delectus, amet tenetur voluptatum
+                        dignissimos iusto, necessitatibus doloremque?.</p>
+                </details>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- dfn -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt; dfn &gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per definire il termine di una parola o frase all'interno di un documento
+                HTML. Viene comunemente utilizzato per fornire una definizione o una spiegazione del termine che può
+                essere consultata dai lettori.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <p><dfn>Pseudocodice</dfn> è una rappresentazione di un algoritmo o di una sequenza di istruzioni che
+                    utilizza una combinazione di linguaggio naturale e convenzioni di programmazione.</p>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- dialog -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt; dialog &gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per creare una finestra di dialogo o un modulo modale all'interno di un
+                documento HTML. Rappresenta un'interazione con l'utente che richiede l'input o la visualizzazione di
+                informazioni aggiuntive.È possibile aprire o chiudere programmaticamente la finestra di dialogo
+                utilizzando JavaScript, ad esempio al clic di un pulsante o in risposta a un evento specifico.
+                è utile per creare interazioni utente chiare e focalizzate, in cui è necessario richiedere l'input
+                dell'utente o mostrare messaggi importanti. Tuttavia, è importante tenere presente che il tag <dialog>
+                    non è supportato nativamente in tutti i browser e potrebbe richiedere l'uso di scripting aggiuntivo
+                    o polyfill per garantire un comportamento consistente su tutte le piattaforme.
+            </div>
+        </li>
+        <li style="margin-bottom: 200px;">
+            <div>Esempio : </div>
+            <div>
+                <dialog open>
+                    <h2>Conferma</h2>
+                    <p>Sei sicuro di voler eliminare questo elemento?</p>
+                    <form method="dialog">
+                        <button>OK</button>
+                    </form>
+                </dialog>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- div -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt; div &gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : è uno degli elementi più comuni e flessibili in HTML. Viene utilizzato come contenitore
+                generico per raggruppare e organizzare altri elementi HTML. Non ha un significato specifico o uno scopo
+                semantico proprio, ma può essere utilizzato come elemento di divisione o sezione all'interno di una
+                pagina. Può racchiude diversi elementi all'interno di un unico blocco.È possibile applicare stili,
+                regole CSS o funzionalità aggiuntive al contenuto all'interno del tag, in base alle necessità
+                specifiche.Può essere utilizzato per suddividere la pagina in sezioni logiche, creare colonne o griglie,
+                raggruppare elementi correlati e applicare stili specifici a un insieme di elementi.
+                Inoltre, il tag può fungere da contenitore per applicare scripting o logica personalizzata a un gruppo
+                di elementi.
+                <b>È importante notare che il tag "div" di per sé non trasmette alcun significato semantico specifico,
+                    quindi è consigliabile utilizzare tag HTML più appropriati quando disponibili, come "header", "nav",
+                    "section", "article" e altri, per fornire un significato semantico più chiaro al contenuto.</b>
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <div class="warning" style="max-width: 200px;">
+                    <img style="max-width: 200px;" src="https://hsnaples.org/wp-content/uploads/max_0025-copy-copy.jpg"
+                        alt="An intimidating panter (cat).">
+                    <p>Beware of the PANTER!!!</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- dl -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;dl&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per creare una lista di definizioni all'interno di un documento HTML.
+                Rappresenta un elenco di termini (definizioni) e le relative descrizioni associate.<br>
+                <ul>
+                    <li><b> &lt;dl &gt; definizione di lista </b></li>
+                    <li> &lt;dt &gt; definizione di termine </li>
+                    <li>&lt;dd&gt; definizione di descrizione</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <dl>lista :
+                    <dt> termine: HTML</dt>
+                    <dd> descrizione: HyperText Markup Language - il linguaggio di markup standard per la creazione di
+                        pagine web.
+                    </dd>
+
+                    <dt> termine: CSS</dt>
+                    <dd> descrizione: Cascading Style Sheets - un linguaggio di stile utilizzato per definire l'aspetto
+                        e la
+                        formattazione di un documento HTML.</dd>
+
+                    <dt> termine: JavaScript</dt>
+                    <dd>descrizione: Un linguaggio di programmazione per la creazione di interattività e funzionalità
+                        dinamiche sulle
+                        pagine web.</dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- dt -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;dt&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato all'interno di un elemento "dl" (lista di definizioni) per definire un
+                termine o una parola da definire. Rappresenta l'intestazione o l'etichetta del termine nella lista
+                di definizioni.<br>
+                <ul>
+                    <li> &lt;dl &gt; definizione di lista</li>
+                    <li><b> &lt;dt &gt; definizione di termine </b></li>
+                    <li>&lt;dd&gt; definizione di descrizione</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <dl>lista :
+                    <dt> termine: HTML</dt>
+                    <dd> descrizione: HyperText Markup Language - il linguaggio di markup standard per la creazione di
+                        pagine web.
+                    </dd>
+
+                    <dt> termine: CSS</dt>
+                    <dd> descrizione: Cascading Style Sheets - un linguaggio di stile utilizzato per definire l'aspetto
+                        e la
+                        formattazione di un documento HTML.</dd>
+
+                    <dt> termine: JavaScript</dt>
+                    <dd>descrizione: Un linguaggio di programmazione per la creazione di interattività e funzionalità
+                        dinamiche sulle
+                        pagine web.</dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- em -------------------------------------------------------- -->
+    <ul id="e">
+        <li>
+            <div>Tag: &lt;em&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per enfatizzare un testo all'interno di un documento HTML. Rappresenta una
+                porzione di testo che deve essere resa in corsivo o evidenziata per attirare l'attenzione del lettore.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <p>La risposta corretta è <em>42</em>.</p>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- embed -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;embed&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per incorporare contenuti multimediali, come file audio, video o oggetti
+                interattivi, direttamente all'interno di una pagina HTML.Il tag supporta diversi tipi di
+                contenuti multimediali, come video, audio, immagini e oggetti interattivi come flash. Tuttavia, la
+                capacità di riproduzione dei diversi tipi di contenuti dipende dalla capacità del browser e dai plugin
+                installati sul dispositivo dell'utente.
+                È importante notare che il tag è stato deprecato in HTML5 e l'uso consigliato è utilizzare il
+                tag "video" per i video e il tag "audio" per i file audio. Tuttavia, il tag "embed" può ancora essere
+                utilizzato per supportare browser più vecchi o specifici casi d'uso.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <embed type="video/mp4" src="videoplaybac.mp4" autoplay="false" autoplay="1" width="200px">
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- fieldset -------------------------------------------------------- -->
+    <ul id="f">
+        <li>
+            <div>Tag: &lt;fieldset&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per raggruppare insieme un insieme di elementi di input correlati in un
+                modulo HTML.Il tag "fieldset" può essere utilizzato per creare una struttura visuale e logica
+                all'interno di un modulo, consentendo agli utenti di comprendere meglio la relazione tra gli
+                elementi di input correlati. Inoltre, può essere utile per l'accessibilità, poiché gli screen reader
+                possono leggere l'elemento "legend" per fornire ulteriori informazioni sul gruppo di input ai
+                lettori di schermo.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Dettagli personali</legend>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                    </fieldset>
+                    <input type="submit" value="Invia">
+                </form>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- figcaption -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;figcaption&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato all'interno di un elemento "figure" per fornire una didascalia o una
+                descrizione associata a un'immagine, un grafico o un'altra media all'interno del documento HTML.
+                L'elemento "figcaption" contiene la didascalia dell'immagine e aiuta a fornire contesto e informazioni
+                aggiuntive sull'elemento multimediale all'interno del documento. Le didascalie possono essere utili per
+                spiegare il contenuto dell'immagine, fornire attribuzioni o qualsiasi altra informazione rilevante.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <figure>
+                    <img width="200px"
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+                        alt="Elephant at sunset">
+                    <figcaption>Un elefante al tramonto</figcaption>
+                </figure>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- figure -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;figure&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per rappresentare un contenuto autonomo all'interno di un documento HTML.
+                È comunemente utilizzato per includere immagini, grafici, diagrammi, video, codice sorgente e altri tipi
+                di media. Consente di associare una didascalia o una descrizione all'elemento multimediale tramite
+                l'elemento "figcaption", fornendo ulteriori informazioni o contesto all'utente.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <figure>
+                    <img width="200px"
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+                        alt="Elephant at sunset">
+                    <figcaption>Un elefante al tramonto</figcaption>
+                </figure>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- footer -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;footer&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per rappresentare la sezione finale o il piè di pagina di un documento o
+                di una sezione specifica di contenuto all'interno di un documento HTML. Può racchiude un paragrafo che
+                contiene le informazioni sul copyright e i diritti riservati del sito web,è posizionata alla fine del
+                documento o alla fine di una sezione di contenuto, come il piè di pagina.Fornisce informazioni
+                aggiuntive o contenuti correlati al termine del documento o alla fine di una sezione. Può contenere
+                elementi come testo di attribuzione, link a pagine di informazioni legali, informazioni di contatto,
+                link a social media o altre informazioni di riferimento.
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <footer>
+                    <p>© 2023 Example . Tutti i diritti riservati.</p>
+                </footer>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- form -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;form&gt; </div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per creare un modulo interattivo all'interno di una pagina web. Un modulo
+                è un'area in cui gli utenti possono inserire dati, fare selezioni o eseguire azioni.
+                Definisce un contenitore per gli elementi di input, come campi di testo, caselle di controllo, pulsanti
+                di opzione, menu a discesa e pulsanti di invio. Questi elementi di input consentono agli utenti di
+                inserire informazioni come nome, email, password, indirizzo e altro ancora.
+                il tag definisce un modulo che invierà i dati inseriti a "/action.php" utilizzando il metodo
+                HTTP POST.
+                onsente di raccogliere dati dagli utenti in modo strutturato e inviarli al server per l'elaborazione o
+                l'archiviazione. Una volta inviato il modulo, i dati possono essere processati dal lato server o
+                utilizzati dal lato client attraverso script o azioni specificate nel valore dell'attributo "action".
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <form action="/action.php" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <input type="submit" value="Invia">
+                </form>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <!-- ----------------------------------------------------- form -------------------------------------------------------- -->
+    <ul>
+        <li>
+            <div>Tag: &lt;h1&gt; - &lt;h6&gt;</div>
+        </li>
+        <li>
+            <div> Utilizzo : viene utilizzato per creare un modulo interattivo all'interno di una pagina web. Un modulo
+                è un'area in cui gli utenti possono inserire dati, fare selezioni o eseguire azioni.
+                Definisce un contenitore per gli elementi di input, come campi di testo, caselle di controllo, pulsanti
+                di opzione, menu a discesa e pulsanti di invio. Questi elementi di input consentono agli utenti di
+                inserire informazioni come nome, email, password, indirizzo e altro ancora.
+
+            </div>
+        </li>
+        <li>
+            <div>Esempio : </div>
+            <div>
+                <h1>Titolo principale</h1>
+                <h2>Sottotitolo</h2>
+                <h3>Sotto-sottotitolo</h3>
+            </div>
+        </li>
+    </ul>
+    <hr>
 
 
 
 
 
 
+
+
+    <a href="#a">A</a> | <a href="#b">B</a>| <a href="#c">C</a>| <a href="#d">D</a>| <a href="#e">E</a>| <a
+        href="#f">F</a>| <a href="#g">G</a>| <a href="#h">H</a>| <a href="#i">I</a>| <a href="#j">J</a>| <a
+        href="#k">K</a>| <a href="#l">L</a>| <a href="#m">M</a>| <a href="#n">N</a>| <a href="#o">O</a>| <a
+        href="#p">P</a>| <a href="#q">Q</a>| <a href="#r">R</a>| <a href="#s">S</a>| <a href="#t">T</a>| <a
+        href="#u">U</a>| <a href="#v">V</a>| <a href="#w">W</a>| <a href="#x">X</a>| <a href="#y">Y</a>| <a
+        href="#z">Z</a>
 
     <!-- ------------------------------------------------------------------------------------------------------------- -->
     <script>
